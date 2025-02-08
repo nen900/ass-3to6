@@ -1,0 +1,118 @@
+
+
+body{
+    margin: 0;
+    background-color:rgb(190, 241, 233);}
+
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.75rem;
+    /* width: 90rem;
+    height: 52.5rem; */
+    top: -26.1875rem;
+    left: -45rem;
+    gap: 0rem;
+    opacity: 0rem;
+
+}
+
+.outer-box
+{
+    margin-top: 6rem;
+    flex: 1;
+    min-width: 18.75rem;
+    /* border: 0.0625rem solid rgb(190, 241, 233); */
+     /* #2EC4B6 */
+    background-color:rgb(190, 241, 233);
+    box-sizing: border-box;
+   
+}
+
+.inner-box{
+    margin-top: 6rem;
+    flex: 2;
+    min-width: 18.75rem;
+    /* border: 1px solid; */
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0rem 0.25rem 3.125rem 0rem #0408131A;
+    /* width: 36.25rem;
+    height: 42.4375rem; */
+    top: 5.0625rem;
+    left: 45rem;
+    gap: 0rem;
+    border-radius: 0.375rem 0rem 0rem 0rem;
+    opacity: 0rem;
+
+}
+.blue-text
+{
+    text-align: center;
+    color: #458f9e;
+    text-decoration: underline;
+}
+
+.form-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.left-qs, 
+.right-qs
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bigger-qs
+{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    /* justify-content: center; */
+    /* margin-top: 0.875rem; */
+
+}
+
+.button
+{
+    background-color:rgb(66, 148, 136) ;
+}
+
+.mobile-text { display: none ;}
+.mobile-form { display: none ;}
+@media (max-width : 770px) 
+{
+    .inner-box {margin-top: 2rem;}
+    .outer-box {margin-top: 2rem;}
+    .form-container
+     {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-qs, .right-qs {
+        width: 100%;
+        flex: none;}
+    /* .block-sp { } */
+    .laptop-text {display: none;}
+    .mobile-text {display: inline;}
+
+    .left-qs, .right-qs {display: none;}
+    .mobile-form {display: inline;}
+    .bigger-qs {flex: 1; width: 50%;}
+    .inner-box {width: 200px ;}
+}
+
+
+
+

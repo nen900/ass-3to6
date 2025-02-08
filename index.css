@@ -1,0 +1,80 @@
+
+body 
+{
+    background-image: url('bor.JPG') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.75rem;
+    /* width: 90rem;
+    height: 52.5rem; */
+    top: -26.1875rem;
+    left: -45rem;
+    gap: 0rem;
+    opacity: 0rem;
+
+}
+
+.mainbox 
+{
+    background-color: rgb(243, 217, 183);
+    color: rgb(36, 2, 2);
+    height: 550px;
+    width: 350px;
+    position: relative;
+    left: 450px;
+    /* padding-left: 40px; */
+    padding-top: 40px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.text{padding-left: 40px;}
+
+.loopy
+{
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.clicky 
+{
+    display: inline-block;
+    padding: 12px 24px; 
+    background-color: #4E342E;
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px; 
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s; /*for smoth transition when hover effects */
+  }
+  
+.clicky:hover
+{
+    background-color: #4c1d12; 
+    transform: scale(1.08); /* Slightly enlarge on hover */
+}
+  
+.clicky:active 
+{
+    transform: scale(1); /* Return to normal size when clicked */
+}
+  
+
+@media (max-width : 770px) 
+{
+    .flex-container
+     {
+        display: flex;
+        flex-direction: column;
+    }
+}
